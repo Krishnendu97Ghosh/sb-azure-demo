@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
-    @GetMapping("/message")
+    @GetMapping
     public String test(){
-        return "hello from azure demo app";
+        return "if I remove the path from get mapping...will it work?";
     }
 }
